@@ -30,7 +30,7 @@ export const AuthContextProvider = (props) => {
   };
 
   return (
-    <AuthContext.Provider
+    <AuthContext.Provider // in the AuthContext.Provider we give in the value prop the initial  React Context object values
       value={{
         isLoggedIn: isLoggedIn,
         onLogout: logoutHandler,
